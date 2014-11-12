@@ -20,6 +20,7 @@ gem 'kramdown'
 gem 'newrelic_rpm'
 gem 'rack-ssl-enforcer'
 gem "friendly_id", "~> 4.0.10"
+gem "travis"
 
 group :development do
   gem 'pry'
@@ -28,6 +29,7 @@ group :development do
   gem 'pry-remote'
   gem 'debugger-linecache', '1.2.0'
   gem 'httplog'
+  gem 'quiet_assets'
   gem "better_errors"
   gem "binding_of_caller"
 end
