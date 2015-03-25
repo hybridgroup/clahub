@@ -65,7 +65,7 @@ class AgreementsController < ApplicationController
     session[:redirect_after_github_oauth_url] = request.url if signed_out?
     user_repos = @agreement.repositories.collect(&:name)
     @repos = @repos.reject{ |repo| user_repos.include?(repo.full_name) }
-    @users = User.all
+    @users = User.where(nickname: members_of_hybridgroup)
     @rendered_agreement_html = Kramdown::Document.new(@agreement.text).to_html
   end
 
@@ -119,4 +119,5 @@ class AgreementsController < ApplicationController
   def load_agreement
     @agreement = Agreement.find(params[:id])
   end
+  
 end
