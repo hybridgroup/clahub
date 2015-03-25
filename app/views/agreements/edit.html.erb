@@ -23,6 +23,11 @@
     <%= form.label :github_repositories, "Choose a repo:" %>
     <%= form.select :github_repositories, @repos.collect { |repo| [owner_slash_name(repo), owner_slash_name(repo)] }, { include_blank: false }, { multiple: true, class: 'select-chosen', data: {placeholder: "GitHub repositories for #{current_user.nickname}"}, style: "width:350px;", tabindex: "1" } %>
     
+    <hr/>
+    
+    <h4>Transfer ownership to user:</h4>
+    <%= form.select :user_id, @users.collect { |user| [user.nickname, user.id] }, { include_blank: false }, { class: 'select-chosen', data: {placeholder: "Transfer agreement to user"}, style: "width:350px;", tabindex: "2" } %>
+    
     <div class='form-actions'>
       <%= form.button 'Update Agreement', :class => 'btn btn-primary' %>
     </div>
