@@ -26,8 +26,14 @@ class ApplicationController < ActionController::Base
   end
   
   def check_if_member_of_hybridgroup
-    unless current_user.member_of_hybridgroup?
+    unless members_of_hybridgroup.include?(current_user.nickname)
       redirect_to home_url
+    end
+  end
+  
+  def members_of_hybridgroup
+    DevModeCache.cache("members-of-#{GithubRepos::ORGANIZATION}") do
+      GithubRepos.new(current_user).organization_members
     end
   end
 
