@@ -28,13 +28,4 @@ class User < ActiveRecord::Base
     repos.present? || Rails.env.development?
   end
   
-  def member_of_hybridgroup?
-    if Rails.env.development?
-      true
-    else
-      DevModeCache.cache("member-of-#{GithubRepos::ORGANIZATION}") do
-        GithubRepos.new(self).organization_members.include?(nickname)
-      end
-    end
-  end
 end
