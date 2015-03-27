@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-alert
 //= require bootstrap-transition
 //= require bootstrap-carousel
 //= require bootstrap-tab
