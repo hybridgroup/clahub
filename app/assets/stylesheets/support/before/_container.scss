@@ -1,0 +1,6 @@
+@mixin container {
+  @include outer-container;
+  @include media($ron-screen) {
+    max-width: 1170px;
+  }
+}
