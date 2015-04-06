@@ -1,0 +1,9 @@
+.empty-message {
+  @include row(table);
+  text-align: center;
+  margin-top: em(50);
+
+  h3 {
+    font-size: em(22);
+  }
+}

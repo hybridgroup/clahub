@@ -1,0 +1,18 @@
+.thing-status {
+  margin-left: em(20);
+  margin-top: em(5);
+  vertical-align: middle;
+  float: left;
+
+  span {
+    margin-right: em(20);
+  }
+
+  .status-offline {
+    color: #696969;
+  }
+
+  .status-ready {
+    color: green;
+  }
+}

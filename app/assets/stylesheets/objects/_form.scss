@@ -1,0 +1,18 @@
+form {
+  .form-group {
+    @include row();
+    margin-bottom: em(15);
+  }
+
+  .field{
+    margin-bottom: em(15);
+  }
+
+  .form-control {
+    @extend %form-input;
+  }
+
+  .checkbox {
+     @include row();
+  }
+}

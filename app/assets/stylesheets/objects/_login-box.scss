@@ -1,0 +1,17 @@
+.login-box {
+  margin: em(20) auto;
+  width: em(350);
+
+  input[type=checkbox] {
+    float: left;
+    margin: em(3) em(10) 0 0;
+  }
+
+  label {
+    font-weight: 400;
+    line-height: em(20);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

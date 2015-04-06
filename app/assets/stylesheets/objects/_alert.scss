@@ -1,0 +1,30 @@
+.alert {
+  width: 100%;
+  padding: em(15);
+  margin-bottom: em(20);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  h4 {
+    margin-top: 0;
+    color: inherit;
+    display: inline-block;
+  }
+
+  & > p,
+  & > ul {
+    margin-bottom: 0;
+  }
+
+  &.alert-danger {
+    color: $danger-color;
+    background-color: $danger-background;
+    border-color: $danger-border;
+  }
+
+  &.alert-success {
+    color: $success-color;
+    background-color: $success-background;
+    border-color: $success-border;
+  }
+}

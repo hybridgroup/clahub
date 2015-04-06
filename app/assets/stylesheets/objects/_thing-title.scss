@@ -1,0 +1,11 @@
+.thing-title {
+  @include row();
+  margin-top: em(20);
+
+  .thing-name {
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    font-size: em(20);
+  }
+}

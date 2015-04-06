@@ -1,0 +1,35 @@
+footer {
+  height: $footer-height;
+  background: $footer-background;
+  color: $footer-text-color;
+
+  .container {
+    padding-top: em(50);
+  }
+
+  .links {
+    float: left;
+    display: inline-block;
+  }
+
+  .copy {
+    float: right;
+    display: inline-block;
+  }
+
+  a,
+  a:visited {
+    color: $footer-link-color;
+    margin: 0 em(2);
+    text-decoration: none;
+    margin: 0 em(10);
+    &:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+
+  a.first-link {
+    margin-left: 0;
+  }
+}

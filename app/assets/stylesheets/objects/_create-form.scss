@@ -1,0 +1,51 @@
+.create-form {
+  @include row();
+  margin-top: em(39);
+
+  form {
+    width: em(400);
+    margin-right: em(106);
+    float: left;
+  }
+
+  .delete-section {
+    margin-top: em(20);
+  }
+
+  .form-control {
+    padding: em(10) em(14);
+    font-size: em(18);
+  }
+
+  .custom-select select {
+    padding: em(10) em(14) em(10) em(9);
+    font-size: em(18);
+  }
+
+  .custom-select:before {
+    line-height: em(54);
+  }
+
+  input:disabled, select:disabled {
+    cursor: not-allowed;
+  }
+
+  input:disabled, .disabled {
+    background-color: #efefef;
+  }
+
+  a.btn {
+    @include btn-color(#009ece, #FFF, #009ece);
+  }
+
+  .thing-image {
+    float: left;
+    display: inline-block;
+    width: em(248);
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

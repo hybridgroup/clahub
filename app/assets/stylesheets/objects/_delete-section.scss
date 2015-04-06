@@ -1,0 +1,13 @@
+.delete-section {
+  border-top: 1px solid $color-light-gray;
+  text-align: center;
+  .action {
+    @extend %button;
+    margin-top: em(20);
+    @include btn-color(#fff, $danger-color, $danger-color);
+  }
+
+  .fa {
+    margin-right: em(5);
+  }
+}

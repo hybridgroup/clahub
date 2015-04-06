@@ -1,0 +1,32 @@
+.app-collection {
+  .collection-title {
+    @include row(table);
+    margin-top: em(30);
+
+    .title {
+      color: #999;
+      font-weight: 600;
+      display: inline-block;
+      float: left;
+    }
+
+    .delete {
+      margin-top: em(10);
+      float: right;
+      color: $color-gray;
+      &:hover {
+        color: $danger-color;
+      }
+    }
+  }
+
+  .action-add {
+    @extend %button;
+    @include btn-color(#666, #ededed, #ededed);
+
+    .fa {
+      color: #009ece;
+      margin-right: em(10);
+    }
+  }
+}

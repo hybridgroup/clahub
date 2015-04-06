@@ -1,0 +1,29 @@
+.breadcrumb {
+  background-color: $breadcrumb-bg;
+  margin-bottom: em(20);
+  height: em(50);
+  border-bottom: 1px solid $breadcrumb-border-color;
+
+  ol {
+    @include container;
+    padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
+    line-height: em(50);
+    margin: 0 auto;
+    list-style: none;
+    border-radius: 4px;
+
+    > li {
+      display: inline-block;
+
+      + li:before {
+        content: $breadcrumb-separator + "\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+        padding: 0 em(5);
+        color: $breadcrumb-color;
+      }
+    }
+
+    > .active {
+      color: $breadcrumb-active-color;
+    }
+  }
+}

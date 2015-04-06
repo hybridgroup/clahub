@@ -1,0 +1,23 @@
+.user-form {
+  width: em(450);
+
+  .form-group {
+    img {
+      float: left;
+      margin-right: em(20);
+    }
+
+    a.btn {
+      margin-top: em(25);
+      float: left;
+    }
+  }
+
+  .display {
+    border-radius: em(5);
+  }
+
+  .auth-token {
+    background-color: #efefef;
+  }
+}

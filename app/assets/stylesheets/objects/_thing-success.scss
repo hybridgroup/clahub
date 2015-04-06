@@ -1,0 +1,35 @@
+.thing-success {
+  @include row(table);
+  text-align: center;
+
+  .message {
+    background: image-url("thing-success.png") no-repeat top center;
+    width: em(189);
+    height: em(204);
+    margin: em(100) auto em(41) auto;
+    box-sizing: border-box;
+
+    .text {
+      display: inline-block;
+      margin-top: em(60);
+      font-size: em(25);
+      color: #6ebb64;
+      font-weight: 600;
+    }
+  }
+
+  .action-continue, .action-add {
+    width: em(189);
+    font-size: em(15);
+    margin-bottom: em(10);
+    @extend %button;
+  }
+
+  .action-continue {
+    @include btn-color(#FFF, #6ebb64, #6ebb64);
+  }
+
+  .action-add {
+    @include btn-color(#6ebb64, #FFF, #6ebb64);
+  }
+}
