@@ -1,5 +1,74 @@
 @import "chosen";
 @import "bootstrap";
+@import "bourbon";
+@import "neat";
+@import "vendor/normalize";
+@import "vendor/font-awesome";
+
+// Configuration
+$grid-columns                  : 12;
+$min-width                     : 966px;
+$em-base                       : 14px;
+
+// Devices
+$ron-screen                    : new-breakpoint(min-width 1200px 12);
+$design-edge                   : new-breakpoint(max-width 966px 4);
+$tablet                        : new-breakpoint(max-width 768px 4);
+$mobile-large                  : new-breakpoint(max-width 640px 4);
+$mobile                        : new-breakpoint(max-width 480px 4);
+$mobile-small                  : new-breakpoint(max-width 320px 4);
+
+// Color Palette
+$color-white                   : #fff;
+$color-light-blue              : #0088cc;
+$color-dark-blue               : #005580;
+$color-light-gray              : #ddd;
+$color-gray                    : #cfc8c8;
+$color-dark-gray               : #343c45;
+
+// Text
+$font-primary                  : "Open Sans", sans-serif;
+$font-secondary                : Montserrat, sans-serif;
+$font-code                     : Inconsolata, Menlo, Monaco, "Bitstream Vera Sans Mono", "Courier New", monospace;
+$font-color                    : #666;
+$color-title-hero              : rgba(255,255,255, .94);
+$color-anchor                  : $color-light-blue;
+$color-anchor-hover            : $color-dark-blue;
+$line-height-base              : 1.428571429;
+
+// Top Nav
+$topnav-background-color       : $color-dark-gray;
+
+// Footer
+$footer-height                 : em(114);
+$footer-background             : $color-dark-gray;
+$footer-text-color             : #7b8590;
+$footer-link-color             : #7b8590;
+
+// Danger Styles
+$danger-color                  : #a94442;
+$danger-background             : #f2dede;
+$danger-border                 : #ebccd1;
+
+// Success Styles
+$success-color                 : #3c763d;
+$success-background            : #dff0d8;
+$success-border                : #d6e9c6;
+
+// Breadcrumbs
+$breadcrumb-padding-vertical   : 0;
+$breadcrumb-padding-horizontal : 0;
+$breadcrumb-bg                 : #f7f7f7;
+$breadcrumb-separator          : "/";
+$breadcrumb-color              : #a0a0a0;
+$breadcrumb-active-color       : $color-dark-gray;
+$breadcrumb-border-color       : #f2f2f2;
+
+@import "support/before/*";
+@import "support/*";
+@import "views/shared/*";
+@import "objects/*";
+@import "views/*";
 
 @font-face {
     font-family: 'Open Sans';
