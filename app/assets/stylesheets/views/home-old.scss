@@ -1,0 +1,206 @@
+body {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size:16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color:#f80;
+
+  &:hover{
+    color:#D96D00;
+  }
+}
+
+body.pages-home div.hero-unit {
+  padding: 60px 60px 60px 60px;
+
+  img.logo {
+    display:inline-block;
+    float:left;
+    margin:0 60px 0 0;
+
+    position: relative;
+  }
+
+  .text {
+    display: inline-block;
+  }
+}
+
+div#how-it-works {
+  margin-top: 75px;
+}
+
+div#how-it-works.carousel {
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.item {
+    height: 630px;
+
+    img {
+      @extend .img-rounded;
+      margin:0 auto;
+    }
+  }
+}
+
+div#github_repositories_chzn {
+  margin-bottom: 27px;
+}
+
+.agreements-index ul .btn {
+  margin:0 0 0 20px;
+}
+
+body.agreements-new {
+  div#agreement-editor-content {
+    textarea {
+      resize: vertical;
+      height: 220px;
+    }
+  }
+}
+
+body.agreements-edit,
+body.agreements-show,
+body.signatures-create {
+  header {
+    @extend .row;
+  }
+
+  div#agreement-text {
+    @extend .well;
+    margin-top: 27px;
+  }
+
+  button#agreement-submit {
+    @extend .btn, .btn-primary, .btn-large;
+    @extend .span4;
+  }
+
+  a#sign-in-to-agree {
+    @extend .btn, .btn-primary, .btn-large;
+    @extend .span4;
+  }
+
+  a#already-agreed {
+    @extend .btn, .btn-success, .btn-large, .disabled;
+  }
+
+  div#signing-users {
+    margin-top: 27px;
+
+    h2 {
+      @extend .row;
+    }
+  }
+
+  div#contributing-guidelines {
+    @extend .row;
+    margin-bottom: 20px;
+  }
+
+  code#contributing-markup {
+    @extend .well;
+    display: block;
+  }
+}
+
+div.navbar.navbar-fixed-top {
+  background:#292929;
+
+  .navbar-inner{
+    background:inherit;
+    color:#fff;
+    max-width: 62.5em;
+    margin-left:auto;
+    margin-right:auto;
+    border:0;
+    line-height:62px;
+
+    ul.nav{
+      margin:0 0 0 auto;
+      text-align:right;
+      float:none;
+      overflow: hidden;
+
+      li {
+        display: inline-block;
+        float:none;
+
+        a {
+          color:#fff;
+          text-shadow:none;
+          line-height:40px;
+
+          &:hover{
+            color:#D96D00;
+          }
+        }
+
+        &.active{
+          a {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  a.brand {
+    width:200px;
+    margin-left: 8px;
+    padding:0;
+    line-height:62px;
+    background-image: image-url('icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent:100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+
+  ul.footer-links {
+    @extend .breadcrumb;
+
+    li.block {
+      display: block;
+    }
+  }
+}
+
+div.field-selection-group label {
+  display: inline-block;
+}
+
+form.form-horizontal .field_with_errors {
+  display: inline;
+}
+
+.field_with_errors {
+  @include formFieldState($errorText, $errorText, $errorBackground);
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.float-left { float: left; }
+.float-right { float: right; }
+.align-right { text-align: right; }
+.align-left { text-align: left; }
+.align-center { text-align: center; }
