@@ -1,0 +1,33 @@
+// TODO: Get rid of this awful file.
+
+.container {
+  @include container;
+  position: relative;
+}
+
+.row {
+  @include row();
+  @include row(table);
+}
+
+.col-md-12 {
+  @include fill-parent();
+  @include row(table);
+}
+
+.col-md-4 {
+  @include span-columns(4);
+  @include omega();
+  vertical-align: top;
+}
+
+.col-md-6 {
+  @include span-columns(6);
+  vertical-align: top;
+}
+
+.col-md-8 {
+  @include span-columns(8);
+  vertical-align: top;
+}
+
