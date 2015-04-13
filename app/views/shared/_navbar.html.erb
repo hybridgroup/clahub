@@ -1,8 +1,7 @@
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <a class="brand" href="/">The Hybrid Group</a>
+<div class="navbar">
+  <div class="container">
+    <a class="brand" href="/"><span>The Hybrid Group</span></a>
     <ul class="nav">
-      <%# nav_link_to 'Home', home_path %>
       <%= nav_link_to 'Why CLAs?', page_path('why_cla') %>
       <% if signed_in? %>
         <%= nav_link_to 'My agreements and signatures', agreements_path %>
