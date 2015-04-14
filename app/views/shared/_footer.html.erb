@@ -1,0 +1,10 @@
+<footer>
+  <div class="container">
+    <ul>
+      <li class="block">This site uses <a href="http://clahub.com" target="_blank">CLAHub</a> from Jason Morrison</li>
+      <% if signed_in? %>
+        <%= nav_link_to 'Sign Out', sign_out_path %>
+      <% end %>
+    </ul>
+  </div>
+</footer>

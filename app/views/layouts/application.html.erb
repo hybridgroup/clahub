@@ -12,26 +12,20 @@
 </head>
 <body class="<%= body_class %>">
 
-<% unless @suppress_navbar %>
-  <%= render partial: 'shared/navbar' %>
-<% end %>
+<div class="app-wrapper">
+  <% unless @suppress_navbar %>
+    <%= render partial: 'shared/navbar' %>
+  <% end %>
 
-<div class="container">
-  <%= render partial: 'shared/flashes' %>
-  <%= render partial: 'shared/announcements' %>
+  <div class="container">
+    <%= render partial: 'shared/flashes' %>
+    <%= render partial: 'shared/announcements' %>
 
-  <%= yield %>
-
-  <footer class="row">
-    <ul class="footer-links">
-      <li class="block">This site uses <a href="http://clahub.com" target="_blank">CLAHub</a> from Jason Morrison</li>
-      <% if signed_in? %>
-        <%= nav_link_to 'Sign Out', sign_out_path %>
-      <% end %>
-    </ul>
-    </div>
-  </footer>
+    <%= yield %>
+  </div>
 </div>
+
+<%= render partial: 'shared/footer' %>
 
 <%= javascript_include_tag "application" %>
 
