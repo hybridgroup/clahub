@@ -1,0 +1,27 @@
+.hero {
+  margin: 0 auto em(30) auto;
+  padding: 0;
+  width: em(700);
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    float: left;
+    display: inline-block;
+    margin: 0 em(60) 0 0;
+  }
+
+  .text {
+    float: left;
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: em(53);
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin: em(2) 0 em(2) 0;
+  }
+}

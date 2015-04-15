@@ -49,10 +49,6 @@ h2, .h2 {
   font-size: em(30);
 }
 
-.pull-right {
-  float: right;
-}
-
 pre {
   display: block;
   padding: 9.5px;
@@ -67,56 +63,12 @@ pre {
   border-radius: 4px;
 }
 
-.status-ready, .status-online {
-  color: green !important;
-}
-
-.status-error {
-  color: #B04A4A !important;
-}
-
 a {
   color: $color-light-blue;
   text-decoration: none;
 
   &:hover {
     color: $color-dark-blue;
-  }
-}
-
-@-webkit-keyframes dot {
-  0%, 50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes dot {
-  0%, 50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes dot {
-  0%, 50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes dot {
-  0%, 50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
