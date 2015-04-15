@@ -3,10 +3,13 @@
   height: em(50);
   position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   margin: 0;
   padding: 0;
-  z-index: 999;
+  z-index: 1030;
+  margin-bottom: 0;
 
   .brand {
     display: inline-block;
