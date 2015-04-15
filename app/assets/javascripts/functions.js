@@ -33,7 +33,8 @@ $(function() {
         $('.slider-caption').html(caption);
       },
       onSlideBefore: function() {
-        $('.slider-caption').html('');
+        $('.slider-caption h4').fadeOut('fast');
+        $('.slider-caption p').fadeOut('fast');
       },
       onSlideAfter: function($element, oldIndex, newIndex) {
         var caption = $('.bxslider li img[alt=' + (newIndex+1*1) +']').data('caption');
