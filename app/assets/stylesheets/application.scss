@@ -9,6 +9,7 @@
 $grid-columns                  : 12;
 $min-width                     : 966px;
 $em-base                       : 14px;
+$border-box-sizing             : true !default;
 
 // Devices
 $ron-screen                    : new-breakpoint(min-width 1200px 12);
@@ -35,6 +36,7 @@ $color-title-hero              : rgba(255,255,255, .94);
 $color-anchor                  : $color-light-blue;
 $color-anchor-hover            : $color-dark-blue;
 $line-height-base              : 1.428571429;
+$font-size                     : $em-base;
 
 // Top Nav
 $topnav-background-color       : #292929;
