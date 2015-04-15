@@ -5,7 +5,7 @@
   }
 
   .slider-caption {
-    min-height: em(105);
+    min-height: em(90);
     width: em(940);
     margin: 0 auto em(30) auto;
     background: #333;
@@ -13,8 +13,8 @@
     color: #fff;
 
     h4 {
-      font-size: em(26);
-      line-height: em(26);
+      font-size: em(20);
+      line-height: em(22);
       font-weight: bold;
       margin: 0;
       color: #fff;
@@ -22,7 +22,7 @@
 
     p {
       margin: 0;
-      font-size: em(20);
+      font-size: em(18);
     }
   }
 }
