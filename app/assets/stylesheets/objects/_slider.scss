@@ -3,4 +3,22 @@
     box-shadow: none;
     border: 0;
   }
+
+  .slider-caption {
+    height: em(80);
+    width: em(940);
+    margin: 0 auto em(30) auto;
+
+    h4 {
+      font-size: em(26);
+      line-height: em(26);
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: em(20);
+    }
+  }
 }

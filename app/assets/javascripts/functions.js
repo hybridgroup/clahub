@@ -23,9 +23,22 @@ $(function() {
     }
   });
 
-  $('.bxslider').bxSlider({
-    mode: 'fade',
-    pager: false,
-    auto: true
-  });
+  if ($('.bxslider').length) {
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      pager: false,
+      auto: true,
+      onSliderLoad: function() {
+        var caption = $('.bxslider li:first-child img').data('caption');
+        $('.slider-caption').html(caption);
+      },
+      onSlideBefore: function() {
+        $('.slider-caption').html('');
+      },
+      onSlideAfter: function($element, oldIndex, newIndex) {
+        var caption = $('.bxslider li img[alt=' + (newIndex+1*1) +']').data('caption');
+        $('.slider-caption').html(caption);
+      }
+    });
+  };
 });
