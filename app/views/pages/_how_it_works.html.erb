@@ -1,38 +1,17 @@
-<div id="how-it-works" class="carousel slide">
-  <%
-    steps = [
-      'When new pull request is marked as needing a CLA signature',
-      'Sign in with GitHub',
-      'Fill up the needed fields',
-      'Sign the agreement',
-      'Done! The pull request is automatically marked ready for merge.'
-    ]
-  %>
+<%
+  steps = [
+    'When new pull request is marked as needing a CLA signature',
+    'Sign in with GitHub',
+    'Fill up the needed fields',
+    'Sign the agreement',
+    'Done! The pull request is automatically marked ready for merge.'
+  ]
+%>
+<div id="how-it-works" class="slider">
   <h2>How does it work?  Just a few easy steps:</h2>
-  <div class="carousel-inner">
+  <ul class="bxslider">
     <% steps.each_with_index do |step, index| %>
-      <div class="item <%= 'active' if index == 0 %>">
-        <%= image_tag "how-it-works/#{ index + 1}.jpg" %>
-        <div class="carousel-caption">
-          <h4>Step <%= index + 1%></h4>
-          <p><%= step %></p>
-        </div>
-      </div>
+    <li><%= image_tag "how-it-works/#{ index + 1}.jpg", :data =>  { :caption => "<h4>Step #{index + 1}</h4> <p>#{step}</p>"} %></li>
     <% end %>
-  </div>
-
-  <a class="left carousel-control" href="#how-it-works" data-slide="prev">‹</a>
-  <a class="right carousel-control" href="#how-it-works" data-slide="next">›</a>
+  </ul>
 </div>
-
-<% content_for :javascript do %>
-  <script type="text/javascript">
-    //<![CDATA[
-      $(function() {
-        $('.carousel').carousel({
-          interval: 5000
-        });
-      });
-    //]]>
-  </script>
-<% end %>
