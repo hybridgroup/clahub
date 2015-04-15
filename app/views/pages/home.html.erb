@@ -1,13 +1,15 @@
-<div class="hero">
-  <%= image_tag 'thg-logo.png', class: 'logo' %>
-  <div class="text">
-    <h1>The Hybrid Group</h1>
-    <h2>Contributor License Agreements</h2>
-    <p><a class="btn btn-primary btn-large" href="/auth/github">Sign in with GitHub to get started &raquo;</a></p>
-    <p>Or, read more about <%= link_to 'what CLAs are and why you might use one', page_path('why_cla') %>&hellip;</p>
+<% content_for :hero_unit do %>
+  <div class="hero">
+    <div class="hero-center">
+      <%= image_tag 'thg-logo.png', class: 'logo' %>
+      <div class="text">
+        <h1>The Hybrid Group</h1>
+        <h2>Contributor License Agreements</h2>
+        <p class="github-login"><a href="/auth/github"><i class="fa fa-github"></i> Sign in with github to get started</a></p>
+        <p class="read-more">Or, read more about <%= link_to 'what CLAs are and why you might use one', page_path('why_cla') %>&hellip;</p>
+      </div>
+    </div>
   </div>
-</div>
-
-<div class="clear"></div>
+<% end %>
 
 <%= render partial: 'how_it_works' %>

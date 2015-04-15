@@ -1,27 +1,58 @@
 .hero {
-  margin: 0 auto em(30) auto;
-  padding: 0;
-  width: em(700);
-  display: block;
-  position: relative;
-  overflow: hidden;
+  background-color: #eee;
+  padding: em(40) 0;
+  margin-bottom: em(30);
 
-  img {
-    float: left;
-    display: inline-block;
-    margin: 0 em(60) 0 0;
-  }
+  .hero-center {
+    width: em(800);
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
 
-  .text {
-    float: left;
-    display: inline-block;
-  }
+    img {
+      float: left;
+      display: inline-block;
+      margin: 0 em(60) 0 0;
+    }
 
-  h1 {
-    font-size: em(53);
-    line-height: 1;
-    letter-spacing: -1px;
-    font-weight: bold;
-    margin: em(2) 0 em(2) 0;
+    .text {
+      float: left;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: em(59);
+      line-height: 1;
+      letter-spacing: -1px;
+      font-weight: bold;
+      margin: 0 0 em(2) 0;
+    }
+
+    h2 {
+      font-size: em(31);
+      font-weight: bold;
+    }
+
+    .github-login {
+      text-align: center;
+
+      a {
+        @include button-base();
+        @include btn-color(#FFF, #495461, #495461);
+        @include button-size(15px, 18px, 18px, 18px, 5px);
+
+        .fa {
+          margin-right: em(5);
+          font-size: em(18);
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .read-more {
+      font-size: em(18);
+      font-weight: 300;
+    }
   }
 }

@@ -26,6 +26,8 @@ $color-dark-blue               : #005580;
 $color-light-gray              : #ddd;
 $color-gray                    : #cfc8c8;
 $color-dark-gray               : #343c45;
+$color-orange                  : #f80;
+$color-dark-orange             : #D96D00;
 
 // Text
 $font-primary                  : "Open Sans", sans-serif;
@@ -40,6 +42,7 @@ $font-size                     : $em-base;
 
 // Top Nav
 $topnav-background-color       : #292929;
+$topnav-height                 : em(50);
 
 // Footer
 $footer-height                 : em(50);

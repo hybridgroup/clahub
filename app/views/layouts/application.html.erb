@@ -17,6 +17,8 @@
   <% end %>
 
   <div id="app-wrapper">
+    <%= yield :hero_unit %>
+
     <div class="container">
       <%= render partial: 'shared/flashes' %>
       <%= render partial: 'shared/announcements' %>

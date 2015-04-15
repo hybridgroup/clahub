@@ -1,6 +1,6 @@
 .navbar {
   background: $topnav-background-color;
-  height: em(50);
+  height: $topnav-height;
   position: fixed;
   top: 0;
   right: 0;
@@ -28,9 +28,9 @@
     padding: 0;
     list-style-type: none;
     float: right;
+    line-height: $topnav-height;
 
     li {
-      margin-top: em(10);
       display: inline-block;
       a {
         color: #fff;
