@@ -1,0 +1,10 @@
+.agreements-new {
+  .header {
+    @include row(table);
+    margin-bottom: em(15);
+  }
+
+  form {
+    @include row(table);
+  }
+}
