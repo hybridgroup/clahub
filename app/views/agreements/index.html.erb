@@ -6,8 +6,8 @@
   </div>
 
   <% if current_user.admin_of_repos? %>
-    <div class="row-fluid">
-      <legend>Created</legend>
+    <div class="created">
+      <h3>Created</h3>
       <% if @agreements.any? %>
         <ul id="my-agreements">
           <% @agreements.each do |agreement| %>
@@ -22,8 +22,8 @@
     </div>
   <% end %>
 
-  <div class="row-fluid">
-    <legend>Signed</legend>
+  <div class="signed">
+    <h3>Signed</h3>
     <% if @signatures.any? %>
       <ul>
         <% @signatures.each do |signature| %>
@@ -37,8 +37,8 @@
 
 
 <% unless current_user.admin_of_repos? %>
-  <div class="row-fluid">
-    <legend>Pending to Sign</legend>
+  <div class="pending">
+    <h3>Pending to Sign</h3>
     <% if @pending.any? %>
       <ul id="my-agreements">
         <% @pending.each do |agreement| %>

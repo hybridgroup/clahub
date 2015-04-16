@@ -2,6 +2,7 @@
   .header {
     @include fill-parent();
     @include row(table);
+    margin-bottom: em(15);
 
     h1 {
       display: inline-block;
@@ -19,5 +20,10 @@
         vertical-align: middle;
       }
     }
+  }
+
+  .created, .signed, .pending {
+    @include row(table);
+    margin-bottom: em(25);
   }
 }
