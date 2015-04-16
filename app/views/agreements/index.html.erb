@@ -1,13 +1,10 @@
-<div class="col-lg-12">
-  <div class="page-header">
-    <h1>
-      Agreements
-      <% if current_user.admin_of_repos? %>
-        <%= link_to "Add", new_agreement_path, class: 'btn btn-primary float-right' %>
-      <% end %>
-    </h1>
+  <div class="header">
+    <h1>Agreements</h1>
+    <% if current_user.admin_of_repos? %>
+      <a href="<%= new_agreement_path %>"><i class="fa fa-plus"></i> Add New</a>
+    <% end %>
   </div>
-  
+
   <% if current_user.admin_of_repos? %>
     <div class="row-fluid">
       <legend>Created</legend>
@@ -37,7 +34,7 @@
       <p>You haven't signed any agreements.</p>
     <% end %>
   </div>
-</div>
+
 
 <% unless current_user.admin_of_repos? %>
   <div class="row-fluid">

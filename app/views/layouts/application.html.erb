@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="114x114" href="/touch-icon/iphone-retina.png" />
   <link rel="apple-touch-icon" sizes="144x144" href="/touch-icon/ipad-retina.png" />
 </head>
-<body class="<%= body_class %>">
+<body>
 
   <% unless @suppress_navbar %>
     <%= render partial: 'shared/navbar' %>
@@ -19,7 +19,7 @@
   <div id="app-wrapper">
     <%= yield :hero_unit %>
 
-    <div class="container">
+    <div class="container <%= body_class %>">
       <%= render partial: 'shared/flashes' %>
       <%= render partial: 'shared/announcements' %>
 

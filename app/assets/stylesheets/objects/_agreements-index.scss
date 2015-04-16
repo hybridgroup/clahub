@@ -1,0 +1,23 @@
+.agreements-index {
+  .header {
+    @include fill-parent();
+    @include row(table);
+
+    h1 {
+      display: inline-block;
+      margin-right: em(20);
+      vertical-align: middle;
+    }
+
+    a {
+      @include button-base();
+      @include btn-color(#FFF, #495461, #495461);
+
+      .fa {
+        margin-right: em(5);
+        font-size: em(18);
+        vertical-align: middle;
+      }
+    }
+  }
+}
