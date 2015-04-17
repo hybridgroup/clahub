@@ -1,0 +1,77 @@
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: em(276);
+  padding: 1px;
+  white-space: normal;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+
+  &.right {
+    margin-left: em(10);
+    &>.arrow {
+        top: 50%;
+        left: em(-11);
+        margin-top: em(-11);
+        border-right-color: #999;
+        border-right-color: rgba(0,0,0,.25);
+        border-left-width: 0;
+
+        &:after {
+          bottom: em(-10);
+          left: 1px;
+          content: " ";
+          border-right-color: #fff;
+          border-left-width: 0;
+        }
+    }
+  }
+
+  &>.arrow {
+    border-width: 11px;
+    &, &:after {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+    }
+
+    &:after {
+      content: "";
+      border-width: em(10);
+    }
+  }
+
+  .popover-title {
+    font-size: em(14);
+    padding: em(8) em(14);
+    margin: 0;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  .popover-content {
+    font-size: em(13);
+    padding: em(8) em(14);
+
+    blockquote {
+      margin: em(5);
+      font-style: italic;
+      color: #666;
+    }
+  }
+}

@@ -46,7 +46,7 @@
           <%= f.check_box :enabled %>
           <%= f.label :enabled, f.object.field.label %>
           <% if description = f.object.field.description %>
-            <a tabindex="0" href="#" rel="popover" title="<% f.object.field.label %>" data-content='<p>When signing your agreement, the person signing will see helper text for this field:</p><blockquote><%= description %></blockquote>'>What's this?</a>
+            <a href="#" rel="popover" data-content='When signing your agreement, the person signing will see helper text for this field: <blockquote><%= description %></blockquote>'>What's this?</a>
           <% end %>
         </li>
       <% end %>

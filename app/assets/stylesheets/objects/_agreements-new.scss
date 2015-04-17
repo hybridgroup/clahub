@@ -88,7 +88,11 @@
   }
 
   .field-selection-group {
-    margin-bottom: em(15);
+    margin-bottom: em(30);
+
+    label:hover {
+      cursor: pointer;
+    }
 
     ul {
       list-style-type: none;
@@ -98,5 +102,10 @@
         margin-bottom: em(5);
       }
     }
+  }
+
+  .form-actions {
+    text-align: center;
+    margin-bottom: em(30);
   }
 }
