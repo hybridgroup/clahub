@@ -107,5 +107,11 @@
   .form-actions {
     text-align: center;
     margin-bottom: em(30);
+
+    .action {
+      @include button-base();
+      @include btn-color(#FFF, #495461, #495461);
+      @include button-size(15px, 18px, inherit, inherit, 5px);
+    }
   }
 }

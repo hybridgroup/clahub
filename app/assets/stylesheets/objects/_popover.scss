@@ -17,32 +17,32 @@
   &.right {
     margin-left: em(10);
     &>.arrow {
-        top: 50%;
-        left: em(-11);
-        margin-top: em(-11);
-        border-right-color: #999;
-        border-right-color: rgba(0,0,0,.25);
-        border-left-width: 0;
+      top: 50%;
+      left: em(-11);
+      margin-top: em(-11);
+      border-right-color: #999;
+      border-right-color: rgba(0,0,0,.25);
+      border-left-width: 0;
 
-        &:after {
-          bottom: em(-10);
-          left: 1px;
-          content: " ";
-          border-right-color: #fff;
-          border-left-width: 0;
-        }
+      &:after {
+        bottom: em(-10);
+        left: 1px;
+        content: " ";
+        border-right-color: #fff;
+        border-left-width: 0;
+      }
     }
   }
 
   &>.arrow {
     border-width: 11px;
     &, &:after {
-        position: absolute;
-        display: block;
-        width: 0;
-        height: 0;
-        border-color: transparent;
-        border-style: solid;
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
     }
 
     &:after {
