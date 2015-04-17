@@ -6,19 +6,19 @@
   <%= form.error_messages %>
 
   <div class="form-block">
-    <%= form.label :name, "Name for the agreement" %>
+    <%= form.label :name, "Name for the agreement" %> <br>
     <%= form.text_field :name %>
   </div>
 
   <div class="form-block">
-    <%= form.label :github_repositories, "Select one or more repositories" %>
-    <%= form.select :github_repositories, @repos.collect { |repo| [owner_slash_name(repo), owner_slash_name(repo)] }, { include_blank: false }, { multiple: true, class: 'select-chosen', data: {placeholder: "GitHub repositories for #{current_user.nickname}"}, style: "width:350px;", tabindex: "1" } %>
-    <a tabindex="0" href="#" rel="popover" title="Public and organization repos" data-content='CLAHub can see organization repos if you have <a href="https://help.github.com/articles/permission-levels-for-an-organization-repository/">admin permissions for the repo</a> and your organization role is <a href="https://help.github.com/articles/publicizing-or-concealing-organization-membership/">publicized</a>.'>Why don't I see any repos?</a>
+    <%= form.label :github_repositories, "Select one or more repositories" %> <br>
+    <%= form.select :github_repositories, @repos.collect { |repo| [owner_slash_name(repo), owner_slash_name(repo)] }, { include_blank: false }, { multiple: true, class: 'select-chosen', data: {placeholder: "GitHub repositories for #{current_user.nickname}"}, style: "width:450px;", tabindex: "1" } %>
+    <a id="repo-help" tabindex="0" href="#" rel="popover" title="Public and organization repos" data-content='CLAHub can see organization repos if you have <a href="https://help.github.com/articles/permission-levels-for-an-organization-repository/">admin permissions for the repo</a> and your organization role is <a href="https://help.github.com/articles/publicizing-or-concealing-organization-membership/">publicized</a>.'>Why don't I see any repos?</a>
   </div>
 
   <div class="form-block">
     <%= form.label :text, "Enter your agreement text" %>
-    <ul id="agreement-editor-tabs" class="nav nav-tabs">
+    <ul id="agreement-editor-tabs" class="agreement-editor-tabs">
       <li class="active"><a class="tab-edit" href="#edit-agreement" data-toggle="tab">Edit</a></li>
       <li><a class="tab-preview" href="#preview-agreement" data-toggle="tab">Preview</a></li>
     </ul>
@@ -28,8 +28,8 @@
         <span class="help-block">(You can use <a href="http://kramdown.gettalong.org/quickref.html">Markdown formatting</a>.)</span>
       </div>
       <div class="tab-pane" id="preview-agreement">
-        <div class="preview-spinner progress progress-striped active">
-          <div class="bar" style="width: 100%;"></div>
+        <div class="preview-spinner">
+          Loading...
         </div>
         <div class="preview well">
         </div>

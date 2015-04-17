@@ -6,5 +6,97 @@
 
   form {
     @include row(table);
+
+    input[type=text], textarea, .chosen-choices {
+      @extend %form-input;
+    }
+
+    input[type=text] {
+      width: em(450);
+    }
+  }
+
+  .form-block {
+    @include row(table);
+    margin-bottom: em(15);
+
+    label {
+      display: inline-block;
+      margin-bottom: em(5);
+    }
+
+    #repo-help {
+      margin-left: em(15);
+      display: inline-block;
+    }
+  }
+
+  .agreement-editor-tabs {
+    list-style: none;
+    padding-left: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: em(15);
+    overflow: hidden;
+
+    li {
+      float: left;
+      margin-bottom: em(-1);
+      position: relative;
+      display: block;
+
+      a {
+        margin-right: em(2);
+        border-radius: 4px 4px 0 0;
+        position: relative;
+        display: block;
+        padding: em(10) em(15);
+
+        &:hover {
+          text-decoration: none;
+          background-color: #eee;
+        }
+      }
+
+      &.active a {
+        color: #555;
+        cursor: default;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-bottom-color: #f00;
+      }
+    }
+  }
+
+  .tab-content {
+    .tab-pane {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+  }
+
+  .preview {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  }
+
+  .field-selection-group {
+    margin-bottom: em(15);
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: em(5);
+      }
+    }
   }
 }
