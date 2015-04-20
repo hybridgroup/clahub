@@ -27,4 +27,23 @@
     background-color: $success-background;
     border-color: $success-border;
   }
+
+  .close {
+    float: right;
+    font-size: em(21);
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    position: relative;
+    top: 2px;
+    right: 2px;
+    color: inherit;
+  }
+
+  &.flash {
+    margin-top: em(15);
+  }
 }
