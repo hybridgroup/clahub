@@ -1,0 +1,22 @@
+.errorExplanation {
+  width: 100%;
+  padding: em(15);
+  margin-bottom: em(20);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: $danger-color;
+  background-color: $danger-background;
+  border-color: $danger-border;
+
+  h2 {
+    font-size: em(20);
+    margin-top: 0;
+    color: inherit;
+    display: inline-block;
+  }
+
+  & > p,
+  & > ul {
+    margin-bottom: 0;
+  }
+}
