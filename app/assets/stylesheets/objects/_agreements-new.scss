@@ -1,19 +1,12 @@
 .agreements-new {
-  .header {
-    @include row(table);
-    margin-bottom: em(15);
+  @include row(table);
+
+  input[type=text], textarea, .chosen-choices {
+    @extend %form-input;
   }
 
-  form {
-    @include row(table);
-
-    input[type=text], textarea, .chosen-choices {
-      @extend %form-input;
-    }
-
-    input[type=text] {
-      width: em(450);
-    }
+  input[type=text] {
+    width: em(450);
   }
 
   .form-block {
@@ -75,6 +68,10 @@
     .active {
       display: block;
     }
+
+    .field_with_errors {
+      display: block;
+    }
   }
 
   .preview {
@@ -113,5 +110,9 @@
       @include btn-color(#FFF, #495461, #495461);
       @include button-size(15px, 18px, inherit, inherit, 5px);
     }
+  }
+
+  .field_with_errors {
+    display: inline-block;
   }
 }

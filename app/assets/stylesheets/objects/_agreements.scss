@@ -1,0 +1,6 @@
+.agreements {
+  .header {
+    @include row(table);
+    margin-bottom: em(15);
+  }
+}
