@@ -1,4 +1,6 @@
 .agreement-form {
+  margin-bottom: em(25);
+
   input[type=text], textarea, .chosen-choices {
     @extend %form-input;
   }
