@@ -1,0 +1,32 @@
+.agreement-form {
+  input[type=text], textarea, .chosen-choices {
+    @extend %form-input;
+  }
+
+  .form-block {
+    @include fill-parent();
+    @include row(table);
+    margin-bottom: em(15);
+
+    label {
+      @include span-columns(3);
+      vertical-align: middle;
+      text-align: right;
+      padding-right: em(15);
+    }
+
+    .controls {
+      @include span-columns(5);
+    }
+  }
+
+  .actions {
+    text-align: center;
+  }
+
+  button {
+    @include button-base();
+    @include btn-color(#FFF, #495461, #495461);
+    @include button-size(15px, 18px, 18px, 18px, 5px);
+  }
+}
