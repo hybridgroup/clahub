@@ -115,4 +115,18 @@
   .field_with_errors {
     display: inline-block;
   }
+
+  .chosen-container-single {
+    font-size: em(14);
+
+    .chosen-single {
+      padding-top: em(5);
+      padding-bottom: em(5);
+      height: auto;
+
+      &>div>b {
+        padding-top: em(5);
+      }
+    }
+  }
 }
