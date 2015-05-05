@@ -27,4 +27,12 @@
     @include row(table);
     margin-bottom: em(25);
   }
+
+  .action {
+    @include button-base();
+    @include btn-color(#FFF, #495461, #495461);
+    @include button-size(5px, 10px, 0.85em, 1.5, 3px);
+    margin-left: em(10);
+    margin-bottom: em(5);
+  }
 }

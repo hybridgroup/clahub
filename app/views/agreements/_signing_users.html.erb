@@ -8,6 +8,8 @@
         <li><a href="https://github.com/<%= sign.user.nickname %>"><%= sign.user.nickname %></a> - <span><%=sign.ip.to_s %></span></li>
       <% end %>
     </ul>
-    <p><%= link_to 'Download CSV', agreement_path(@agreement, format: 'csv') %>.</p>
+    <p>
+      <a href="<%= agreement_path(@agreement, format: 'csv') %>" class="action-download"><i class="fa fa-download"></i> Download CSV</a>
+    </p>
   <% end %>
 </div>
