@@ -12,13 +12,34 @@
 
     label {
       @include span-columns(3);
-      vertical-align: middle;
       text-align: right;
+      vertical-align: top;
       padding-right: em(15);
+      padding-top: em(7);
     }
 
     .controls {
       @include span-columns(5);
+    }
+  }
+
+  .help-block, .formError {
+    display: block;
+    margin-top: em(5);
+  }
+
+  .formError {
+    color: $danger-color;
+  }
+
+  .help-block {
+    color: #999;
+  }
+
+  .error {
+    input, textarea {
+      border-color: $danger-border;
+      background-color: $danger-background;
     }
   }
 
